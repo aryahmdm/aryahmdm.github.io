@@ -35,13 +35,13 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(219, 76%, 55%) 0%, 
-    hsla(219, 89%, 35%, 0) 50%
+    hsl(204, 100%, 50%) 0%, 
+    hsla(204, 100%, 50%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
+    hsla(204, 100%, 50%, 0.251) 0%, 
+    hsla(204, 100%, 50%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -50,8 +50,8 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(219, 76%, 55%), 
-    hsl(219, 89%, 35%)
+    hsl(204, 100%, 50%), 
+    hsl(204, 100%, 40%)
   );
 
   /* solid */
@@ -63,8 +63,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(219, 76%, 55%);
-  --vegas-gold: hsl(219, 76%, 55%);
+  --orange-yellow-crayola: hsl(204, 100%, 50%);
+  --vegas-gold: hsl(204, 100%, 50%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -155,7 +155,10 @@ input, textarea {
 
 html { font-family: var(--ff-inter); }
 
-body { background: var(--smoky-black); }
+body { 
+  background: radial-gradient(circle at bottom center, #0a213f 0%, #030810 100%);
+  background-attachment: fixed;
+}
 
 
 
